@@ -92,7 +92,6 @@ Detailed, step-by-step instructions are provided here:
 - Safe-by-default (no embedded secrets)
 - GitOps-aligned workflows
 - Cost-aware and destroy-friendly
-- Recruiter-readable and production-inspired
 
 ---
 

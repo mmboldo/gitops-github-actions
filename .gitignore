@@ -21,3 +21,6 @@ rendered-*.yaml
 
 # Logs
 *.log
+
+# Build artifacts
+app/target/

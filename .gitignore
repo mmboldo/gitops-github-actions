@@ -1,0 +1,23 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/crash.log
+**/.terraform.lock.hcl
+
+# Kubernetes secrets
+**/*secret*.yaml
+**/*.env
+**/*.env.*
+
+# Rendered / generated files
+rendered-*.yaml
+
+# Logs
+*.log

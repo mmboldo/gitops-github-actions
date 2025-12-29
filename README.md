@@ -95,6 +95,28 @@ Detailed, step-by-step instructions are provided here:
 
 ---
 
+## Cleanup & Cost Management
+
+This project provisions cloud infrastructure components that may incur AWS costs if left running.
+
+Although the repository is primarily intended to demonstrate architecture, workflow design, and GitOps practices, a full teardown procedure is documented to ensure safe cleanup when resources are actually deployed.
+
+The cleanup process covers:
+
+- Removing Kubernetes workloads and ingress resources
+- Releasing AWS Load Balancers created by EKS
+- Destroying infrastructure using Terraform
+- Cleaning up Terraform remote state and container registries
+- Verifying that no billable AWS resources remain
+
+👉 **Detailed teardown instructions:**  
+[Cleanup Guide](docs/CLEANUP.md)
+
+> ⚠️ **Important:**  
+> Always remove Kubernetes resources before running `terraform destroy` to avoid orphaned load balancers and blocked teardown operations.
+
+---
+
 ## Attribution
 
 This project uses a reference Java application originally popularized in DevOps training material.  
